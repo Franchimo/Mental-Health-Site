@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mental Health Diary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="about-page">
+    <!-- Animated background elements -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
+    
+    <!-- Floating particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2>🌿 Mental Health Diary</h2>
+            <div class="nav-actions">
+                <a href="{{ url_for('login') }}" class="btn btn-outline">Login</a>
+                <a href="{{ url_for('register') }}" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="about-main">
+        <div class="about-container">
+            <div class="about-header">
+                <h1 class="animated-title">About Mental Health Diary</h1>
+                <p class="subtitle">Your Safe Space for Healing and Growth</p>
+            </div>
+
+            <section class="about-section">
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h2>What is This Site?</h2>
+                    <p>Mental Health Diary is a compassionate online platform designed to support your mental wellness journey. It's a private, secure space where you can freely express your thoughts, feelings, and experiences without judgment.</p>
+                    <p>We believe that writing about your day, your struggles, and your emotions can be a powerful tool for self-reflection, healing, and personal growth. This website provides you with a digital diary that's always accessible, always private, and always supportive.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💚</div>
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to create a safe, welcoming environment where you can:</p>
+                    <ul class="feature-list">
+                        <li>✨ Document your daily experiences and emotions</li>
+                        <li>✨ Express yourself freely without fear of judgment</li>
+                        <li>✨ Receive positive encouragement and motivation</li>
+                        <li>✨ Track your progress and reflect on your journey</li>
+                        <li>✨ Understand your emotional patterns over time</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h2>Your Privacy Matters</h2>
+                    <p>All your diary entries are stored securely and privately. Only you can access your account and your writings. We use industry-standard security measures including password hashing to protect your information.</p>
+                    <p>Your thoughts, struggles, and victories are yours alone. We are committed to maintaining the highest standards of privacy and security.</p>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2 class="section-title">What You Can Do</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon-small">📖</div>
+                        <h3>Write Your Diary</h3>
+                        <p>Record your daily experiences, thoughts, struggles, and victories. Write as much or as little as you want - this is your space.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon-small">😊</div>
+                        <h3>Track Your Mood</h3>
+                        <p>Select your mood for each entry to track your emotional patterns over time and see your progress.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon-small">💪</div>
+                        <h3>Receive Motivation</h3>
+                        <p>After each entry, receive positive responses and motivational quotes to encourage you and remind you that better days are ahead.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon-small">💾</div>
+                        <h3>Save Your Thoughts</h3>
+                        <p>All your entries are automatically saved. Come back anytime to read, reflect on, or edit your previous entries.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon-small">📊</div>
+                        <h3>View Insights</h3>
+                        <p>See statistics about your writing patterns, mood distribution, and emotional trends to better understand yourself.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon-small">✏️</div>
+                        <h3>Edit Anytime</h3>
+                        <p>Update or delete your entries whenever you need. You have full control over your diary content.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-it-works">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h3>Create Your Account</h3>
+                        <p>Sign up with a username and password. Your account is secure and private.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h3>Start Writing</h3>
+                        <p>Click "New Entry" and begin writing about your day, your struggles, your feelings, or anything on your mind.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h3>Save & Reflect</h3>
+                        <p>Save your entry and receive a positive, motivational response. Your entry is automatically stored for you to revisit anytime.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <h3>Track Progress</h3>
+                        <p>View your insights and see how you've grown over time. Every entry is a step forward in your journey.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="message-section">
+                <div class="message-card">
+                    <h2>Remember</h2>
+                    <p class="message-text">
+                        <strong>It's okay to not be okay.</strong> Everyone faces challenges, and everyone has hard days. 
+                        Writing about your struggles doesn't make you weak - it makes you brave. 
+                        Every entry you write is a step toward healing, understanding, and growth.
+                    </p>
+                    <p class="message-text">
+                        <strong>Better days are ahead.</strong> Your journey may have ups and downs, but remember: 
+                        you have survived 100% of your hardest days so far. Keep pushing forward, 
+                        keep writing, and keep believing in yourself.
+                    </p>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Ready to Begin Your Journey?</h2>
+                <p>Start your healing journey today. Create your account and begin writing your first entry.</p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('register') }}" class="btn btn-primary btn-large">Create Your Account</a>
+                    <a href="{{ url_for('login') }}" class="btn btn-outline btn-large">Sign In</a>
+                </div>
+            </section>
+
+            <section class="support-section">
+                <h2>Important Note</h2>
+                <p class="support-text">
+                    While this diary can be a helpful tool for self-reflection and emotional expression, 
+                    it is not a substitute for professional mental health care. If you are experiencing 
+                    a mental health crisis or need immediate support, please reach out to:
+                </p>
+                <ul class="support-list">
+                    <li>🏥 Your local emergency services (911 in the US)</li>
+                    <li>📞 National Suicide Prevention Lifeline: <strong>988</strong></li>
+                    <li>💬 Crisis Text Line: Text <strong>HOME</strong> to <strong>741741</strong></li>
+                    <li>👨‍⚕️ Your local mental health services</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="about-footer">
+        <p>&copy; 2025 Mental Health Diary. Made with 💚 for your wellness journey.</p>
+    </footer>
+</body>
+</html>
+
