@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Diary - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2>🌿 Mental Health Diary</h2>
+            <div class="nav-actions">
+                <a href="{{ url_for('about') }}" class="btn btn-outline">About</a>
+                <button id="analysisBtn" class="btn btn-secondary">📊 Insights</button>
+                <a href="{{ url_for('logout') }}" class="btn btn-outline">Logout</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <div class="dashboard-layout">
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Quick Actions</h3>
+                    <button id="newEntryBtn" class="btn btn-primary full-width">+ New Entry</button>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Your Entries</h3>
+                    <div id="entriesList" class="entries-list">
+                        <!-- Entries will be loaded here -->
+                    </div>
+                </div>
+            </aside>
+            
+            <section class="content-area">
+                <div id="entryEditor" class="entry-editor" style="display: none;">
+                    <h2>New Entry</h2>
+                    <form id="entryForm">
+                        <div class="form-group">
+                            <label for="entryTitle">Title (Optional)</label>
+                            <input type="text" id="entryTitle" placeholder="Give your entry a title...">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="entryMood">How are you feeling?</label>
+                            <select id="entryMood">
+                                <option value="">Select mood...</option>
+                                <option value="happy">😊 Happy</option>
+                                <option value="calm">😌 Calm</option>
+                                <option value="neutral">😐 Neutral</option>
+                                <option value="sad">😢 Sad</option>
+                                <option value="anxious">😰 Anxious</option>
+                                <option value="tired">😴 Tired</option>
+                                <option value="energetic">⚡ Energetic</option>
+                                <option value="grateful">🙏 Grateful</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="entryContent">Write your thoughts...</label>
+                            <textarea id="entryContent" rows="15" placeholder="Express yourself freely. This is your safe space..." required></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save Entry</button>
+                            <button type="button" id="cancelBtn" class="btn btn-outline" style="display: none;">Cancel</button>
+                        </div>
+                    </form>
+                    
+                    <div id="entryResponse" class="entry-response"></div>
+                </div>
+                
+                <div id="welcomeMessage" class="welcome-message">
+                    <h2>Welcome to Your Safe Space 🌿</h2>
+                    <p>This is your personal diary where you can freely express your thoughts and feelings.</p>
+                    <p>Every entry you write will receive a caring response or motivational quote to support you on your journey.</p>
+                    <p>Click "New Entry" to begin writing, or select an existing entry to read or edit.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Analysis Modal -->
+    <div id="analysisModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📊 Your Insights</h2>
+            <div id="analysisContent" class="analysis-content">
+                <!-- Analysis data will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
+
